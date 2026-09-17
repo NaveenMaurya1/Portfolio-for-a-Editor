@@ -59,27 +59,30 @@ export default function VideoCard({ video }) {
                         className="relative w-full max-w-5xl aspect-video"
                         onClick={(e) => e.stopPropagation()}
                     >
-                        <div className="relative aspect-video overflow-hidden bg-black">
-                            {/* <iframe
+                        {/* <div className="relative aspect-video overflow-hidden bg-black">
+                            <iframe
                                 src={video.videoUrl}
                                 title={video.title}
                                 className="absolute inset-0 w-full h-full"
                                 allow="autoplay; fullscreen"
                                 allowFullScreen
-                            /> */}
+                            />
+
+                        </div> */}
+                        <div className="relative pb-[56.25%] bg-black overflow-hidden">
 
                             <video
                                 src={video.videoUrl}
                                 title={video.title}
                                 autoPlay
+                                controls
                                 muted
                                 loop
                                 playsInline
-                                className="w-full h-full object-cover"
+                                className="absolute inset-0 w-full h-full"
                             />
 
                         </div>
-
                         <button
                             onClick={() => setIsOpen(false)}
                             className="absolute -top-12 right-0 text-white text-2xl"
