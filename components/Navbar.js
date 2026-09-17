@@ -12,18 +12,18 @@ export default function Navbar() {
       <div className="fixed top-7 z-30 w-full">
         <nav className='relative'>
 
-          <div className="font-light text-xl text-amber-600 absolute top-0 left-5">
+          <Link href="/#hero" className="font-light text-xl text-amber-600 absolute top-0 left-5">            
             Ajay - Video Editor
-          </div>
+          </Link>
 
           {/* Desktop Menu */}
           <div className="hidden md:block mr-8 ml-96 bg-black relative right-0">
             <div className="flex justify-end gap-20 text-[#DBD9D7] mx-5 p-0.5">
-              <Link className='hover:text-amber-600 transition-colors' href="#portfolio">NARATIVE</Link>
-              <Link className='hover:text-amber-600 transition-colors' href="#portfolio">COMMERCIAL</Link>
-              <Link className='hover:text-amber-600 transition-colors' href="#portfolio">MUSIC-VIDEOS</Link>
-              <Link className='hover:text-amber-600 transition-colors' href="#about">BIO</Link>
-              <Link className='hover:text-amber-600 transition-colors' href="#contact">CONTACT</Link>
+              <Link className='hover:text-amber-600 transition-colors' href="/#portfolio">COMMERCIAL</Link>
+              <Link className='hover:text-amber-600 transition-colors' href="/#portfolio">MUSIC-VIDEOS</Link>
+              <Link className='hover:text-amber-600 transition-colors' href="/videos">All-VIDEOS</Link>
+              <Link className='hover:text-amber-600 transition-colors' href="/#about">BIO</Link>
+              <Link className='hover:text-amber-600 transition-colors' href="/#contact">CONTACT</Link>
             </div>
           </div>
 

@@ -1,5 +1,6 @@
 'use client'
 import Image from "next/image";
+import BlurFade from "@/components/ui/BlurFadeText";
 export default function Services() {
   const services = [
     {
@@ -20,8 +21,10 @@ export default function Services() {
   ];
 
   return (
+    
     <section className="bg-gray-300 text-back py-20 px-4 border-t border-gray-800">
       <div className="max-w-7xl mx-auto">
+      <BlurFade>
 
         <div className="grid md:grid-cols-3 gap-12">
 
@@ -53,6 +56,7 @@ export default function Services() {
 
         </div>
 
+      </BlurFade>
       </div>
     </section>
   );
