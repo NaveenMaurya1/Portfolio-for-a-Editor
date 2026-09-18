@@ -78,7 +78,7 @@ export default function VideoCard({ video }) {
                                 controls
                                 muted
                                 loop
-                                playsInline
+                                // playsInline
                                 className="absolute inset-0 w-full h-full"
                             />
 
