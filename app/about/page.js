@@ -14,30 +14,30 @@ export default function About() {
 
 
   }
-  return (  
+  return (
     <section id="about" className="bg-black py-20 px-4">
       <div className="max-w-7xl mx-auto">
 
         {/* Header */}
         <div className="mb-16">
           <BlurFade>
-          <p className="text-sm md:text-base font-light tracking-widest text-amber-600 mb-4">
-            ABOUT ME
-          </p>
-          <h2 className="text-white text-5xl md:text-6xl font-light ">
-            {""}
-            <AnimatedTextWord
-              words={[
-                "VIDEO EDITOR",
-                "FILMMAKER",
-                "STORYTELLER",
-                
-              ]}
-              interval={2000}
+            <p className="text-sm md:text-base font-light tracking-widest text-amber-600 mb-4">
+              ABOUT ME
+            </p>
+            <h2 className="text-white text-5xl md:text-6xl font-light ">
+              {""}
+              <AnimatedTextWord
+                words={[
+                  "VIDEO EDITOR",
+                  "FILMMAKER",
+                  "STORYTELLER",
+
+                ]}
+                interval={2000}
               // className="font-medium"
               />
-          </h2>
-              </BlurFade>
+            </h2>
+          </BlurFade>
         </div>
 
         {/* Content Grid */}
@@ -46,21 +46,21 @@ export default function About() {
           {/* Left - Text */}
 
           <div className="space-y-6">
-          <BlurFade>
+            <BlurFade>
 
-            {/* Main Text */}
-            <div className="pt-6 border-t border-gray-800">
+              {/* Main Text */}
+              <div className="pt-6 border-t border-gray-800">
 
-              <TextGenerateEffect
-                words={`I'm a paragraph. Click here to add your own text and edit me. It's easy. Just click "Edit Text" or double click me to add your own content and make changes to the font.`}
-                
-                textClassName="text-gray-400 font-light leading-relaxed text-lg"
-                
-                duration={0.3}
-                staggerDelay={0.08}
+                <TextGenerateEffect
+                  words={`I am a passionate video editor focused on turning raw footage into engaging visual stories. I work across narrative films, commercials, music videos, and digital content, with a strong focus on pacing, emotion, and visual storytelling.`}
+
+                  textClassName="text-gray-400 font-light leading-relaxed text-lg"
+
+                  duration={0.3}
+                  staggerDelay={0.08}
                 />
 
-            </div>
+              </div>
             </BlurFade>
 
 
@@ -69,7 +69,9 @@ export default function About() {
               }`}>
               {isOpen && (
                 <TextGenerateEffect
-                  words={`This is a great space to write long text about your company and your services. You can use this space to go into a little more detail about your company. Talk about your team and what services you provide. Tell your visitors the story of how you came up with the idea for your business and what makes you different from your competitors. Make your company stand out and show your visitors who you are.`}
+                  words={`For me, editing is more than simply putting clips together. It is about finding the right rhythm, creating an atmosphere, and making every cut serve the story. I carefully shape footage through timing, transitions, sound, and visual flow to create an experience that feels intentional and memorable.
+                  Whether it is a cinematic story, a brand campaign, or a music-driven project, I approach every edit with attention to detail and a clear creative vision. My goal is simple: to transform good footage into something that connects with the audience.`}
+                  
                   textClassName="text-gray-400 font-light leading-relaxed text-lg pt-6 border-t border-gray-800"
                   duration={0.02}
                   staggerDelay={0.08}
@@ -81,15 +83,15 @@ export default function About() {
             {/* Read More/Less Button */}
             <BlurFade>
 
-            <button
-              onClick={() => setIsOpen(!isOpen)}
-              className="text-amber-600 hover:text-amber-500 text-sm font-light tracking-widest transition-colors duration-300 inline-flex items-center gap-2 group"
+              <button
+                onClick={() => setIsOpen(!isOpen)}
+                className="text-amber-600 hover:text-amber-500 text-sm font-light tracking-widest transition-colors duration-300 inline-flex items-center gap-2 group"
               >
-              <span>{isOpen ? 'Read less' : 'Read more'}</span>
-              <span className={` group-hover:translate-x-1 transition-transform duration-500 ${isOpen ? 'rotate-180' : ''}`}>
-                →
-              </span>
-            </button>
+                <span>{isOpen ? 'Read less' : 'Read more'}</span>
+                <span className={` group-hover:translate-x-1 transition-transform duration-500 ${isOpen ? 'rotate-180' : ''}`}>
+                  →
+                </span>
+              </button>
 
             </BlurFade>
 
@@ -118,16 +120,16 @@ export default function About() {
             /> */}
             <BlurFade>
 
-            <video
-              src="/about/rain.mp4"
-              className="w-full h-96 object-cover"
-              autoPlay
-              muted
-              loop
-              playsInline
+              <video
+                src="/about/rain.mp4"
+                className="w-full h-96 object-cover"
+                autoPlay
+                muted
+                loop
+                playsInline
               />
 
-              </BlurFade>
+            </BlurFade>
 
             {/* Optional: Add a subtle overlay on hover */}
             <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300"></div>
