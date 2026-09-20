@@ -123,7 +123,7 @@ export default function About() {
             <BlurFade>
 
               <video
-                src="/about/idea.mp4"
+                src="/about/rain.mp4"
                 className="w-full h-96 object-cover"
                 autoPlay
                 muted
