@@ -46,37 +46,38 @@ export default function Navbar() {
           {isOpen && (
             <div className='md:hidden absolute top-16 right-5 bg-black border border-gray-800 rounded mt-2 w-48'>
               <div className='flex flex-col gap-4 text-[#DBD9D7] p-6'>
+              
                 <Link 
                   className='hover:text-amber-600 transition-colors text-sm font-light' 
-                  href="#portfolio"
-                  onClick={() => setIsOpen(false)}
-                >
-                  NARATIVE
-                </Link>
-                <Link 
-                  className='hover:text-amber-600 transition-colors text-sm font-light' 
-                  href="#portfolio"
+                  href="/#portfolio"
                   onClick={() => setIsOpen(false)}
                 >
                   COMMERCIAL
                 </Link>
                 <Link 
                   className='hover:text-amber-600 transition-colors text-sm font-light' 
-                  href="#portfolio"
+                  href="/#portfolio"
                   onClick={() => setIsOpen(false)}
                 >
                   MUSIC-VIDEOS
                 </Link>
+                  <Link 
+                  className='hover:text-amber-600 transition-colors text-sm font-light' 
+                  href="/videos"
+                  onClick={() => setIsOpen(false)}
+                >
+                  All-Videos
+                </Link>
                 <Link 
                   className='hover:text-amber-600 transition-colors text-sm font-light' 
-                  href="#about"
+                  href="/#about"
                   onClick={() => setIsOpen(false)}
                 >
                   BIO
                 </Link>
                 <Link 
                   className='hover:text-amber-600 transition-colors text-sm font-light' 
-                  href="#contact"
+                  href="/#contact"
                   onClick={() => setIsOpen(false)}
                 >
                   CONTACT
