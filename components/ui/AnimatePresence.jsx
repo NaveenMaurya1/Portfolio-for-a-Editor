@@ -28,7 +28,7 @@ export default function AnimatedModal({
           onClick={onClose}
         >
           <motion.div
-            className="max-w-5xl w-full  max-h-[90vh] overflow-y-auto"
+            className="max-w-5xl w-full  max-h-[90vh] overflow-y-auto scrollbar-none"
             initial={{
               opacity: 0,
               y: 40,
