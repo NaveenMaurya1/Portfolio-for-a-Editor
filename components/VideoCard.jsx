@@ -50,48 +50,90 @@ export default function VideoCard({ video }) {
             </div>
 
             {/* Video modal */}
-            {isOpen && (
-                <div
-                    className="fixed inset-0 z-50 bg-black/90 flex items-center justify-center p-6"
-                    onClick={() => setIsOpen(false)}
-                >
-                    <div
-                        className="relative w-full max-w-5xl aspect-video"
-                        onClick={(e) => e.stopPropagation()}
-                    >
-                        {/* <div className="relative aspect-video overflow-hidden bg-black">
-                            <iframe
-                                src={video.videoUrl}
-                                title={video.title}
-                                className="absolute inset-0 w-full h-full"
-                                allow="autoplay; fullscreen"
-                                allowFullScreen
-                            />
+            <AnimatedModal
+                isOpen={isOpen}
+                onClose={() => setIsOpen(false)}
+            >
 
-                        </div> */}
-                        <div className="relative pb-[56.25%] bg-black overflow-hidden">
 
-                            <video
-                                src={video.videoUrl}
-                                title={video.title}
-                                autoPlay
-                                controls
-                                muted
-                                loop
-                                // playsInline
-                                className="absolute inset-0 w-full h-full"
-                            />
+                {/* Video */}
+                <div className="relative aspect-video bg-black overflow-hidden">
+                    <video
+                        src={video.videoUrl}
+                        title={video.title}
+                        autoPlay
+                        controls
+                        muted
+                        loop
+                        playsInline
+                        className="absolute inset-0 w-full h-full object-contain"
+                    />
+                </div>
 
+                {/* Video Information */}
+                <div className="bg-black border-t border-gray-800 p-6 md:p-8">
+
+                    {/* Title + Close */}
+                    <div className="flex justify-between items-start mb-6 gap-4">
+
+                        <div>
+                            <p className="text-amber-600 text-xs font-light tracking-widest mb-2">
+                                {video.category}
+                            </p>
+
+                            <h3 className="text-white text-2xl md:text-3xl font-light">
+                                {video.title}
+                            </h3>
                         </div>
+
                         <button
                             onClick={() => setIsOpen(false)}
-                            className="absolute -top-12 right-0 text-white text-2xl"
+                            className="shrink-0 text-gray-400 hover:text-white transition-colors"
+                            aria-label="Close video"
                         >
-                            ✕
+                            <svg
+                                className="w-6 h-6"
+                                fill="none"
+                                stroke="currentColor"
+                                viewBox="0 0 24 24"
+                            >
+                                <path
+                                    strokeLinecap="round"
+                                    strokeLinejoin="round"
+                                    strokeWidth={1.5}
+                                    d="M6 18L18 6M6 6l12 12"
+                                />
+                            </svg>
                         </button>
+
                     </div>
+
+                    {/* Description */}
+                    <p className="text-gray-400 mb-8 font-light leading-relaxed max-w-3xl">
+                        {video.description}
+                    </p>
+
+                    {/* Crew Information */}
+                    {video.crew && (
+                        <div className="grid grid-cols-2 md:grid-cols-3 gap-x-8 gap-y-6">
+
+                            {Object.entries(video.crew).map(([role, name]) => (
+                                <div key={role}>
+                                    <p className="text-xs font-light text-gray-600 mb-1 uppercase">
+                                        {role}
+                                    </p>
+
+                                    <p className="text-white font-light">
+                                        {name}
+                                    </p>
+                                </div>
+                            ))}
+
+                        </div>
+                    )}
+
                 </div>
-            )}
+            </AnimatedModal>
         </article>
     );
 }

@@ -71,7 +71,7 @@ export default function About() {
                 <TextGenerateEffect
                   words={`For me, editing is more than simply putting clips together. It is about finding the right rhythm, creating an atmosphere, and making every cut serve the story. I carefully shape footage through timing, transitions, sound, and visual flow to create an experience that feels intentional and memorable.
                   Whether it is a cinematic story, a brand campaign, or a music-driven project, I approach every edit with attention to detail and a clear creative vision. My goal is simple: to transform good footage into something that connects with the audience.`}
-                  
+
                   textClassName="text-gray-400 font-light leading-relaxed text-lg pt-6 border-t border-gray-800"
                   duration={0.02}
                   staggerDelay={0.08}
@@ -100,9 +100,11 @@ export default function About() {
               <div className="pt-6 border-t border-gray-800 animate-fadeIn">
                 <Link
                   href="#contact"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="text-amber-600 hover:text-amber-500 text-sm font-light tracking-widest transition-colors duration-300 inline-flex items-center gap-2 group"
                 >
-                  <span>Download CV</span>
+                  <span>View CV</span>
                   <span className="group-hover:translate-x-1 transition-transform">→</span>
                 </Link>
               </div>
