@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { useState } from "react";
+import AnimatedModal from "./ui/AnimatePresence";
 
 export default function VideoCard({ video }) {
     const [isOpen, setIsOpen] = useState(false);
@@ -52,9 +53,7 @@ export default function VideoCard({ video }) {
             {/* Video modal */}
             <AnimatedModal
                 isOpen={isOpen}
-                onClose={() => setIsOpen(false)}
-            >
-
+                onClose={() => setIsOpen(false)} >
 
                 {/* Video */}
                 <div className="relative aspect-video bg-black overflow-hidden">
