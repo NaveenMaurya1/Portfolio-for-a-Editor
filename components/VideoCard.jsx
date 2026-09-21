@@ -62,7 +62,6 @@ export default function VideoCard({ video }) {
                         title={video.title}
                         autoPlay
                         controls
-                        muted
                         loop
                         playsInline
                         className="absolute inset-0 w-full h-full object-contain"

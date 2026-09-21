@@ -99,7 +99,7 @@ export default function About() {
             {isOpen && (
               <div className="pt-6 border-t border-gray-800 animate-fadeIn">
                 <Link
-                  href="#contact"
+                  href="View_Download/ajaypdfCV (2).pdf"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-amber-600 hover:text-amber-500 text-sm font-light tracking-widest transition-colors duration-300 inline-flex items-center gap-2 group"
@@ -123,7 +123,7 @@ export default function About() {
             <BlurFade>
 
               <video
-                src="/about/rain.mp4"
+                src="https://res.cloudinary.com/zz6gfdix/video/upload/v1789902426/idea.mp4"
                 className="w-full h-96 object-cover"
                 autoPlay
                 muted

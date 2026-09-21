@@ -8,17 +8,19 @@ export default function Portfolio() {
   const portfolioItems = [
     {
       id: 1,
-      title: 'HIGHEST PEAK',
+      title: 'Cinematice Shots',
       category: 'NARRATIVE',
       image: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1200&h=800&fit=crop',
-      video: '/about/rain.mp4',
-      description: 'A cinematic journey through breathtaking landscapes',
+      video: 'https://res.cloudinary.com/zz6gfdix/video/upload/v1789926402/cinematic_content.mp4',
+      description: 'A cinematic story about me and and late night work.',
       genre: 'Documentary',
-      duration: '12:45',
+      duration: '00:36',
       crew: {
-        director: 'Daniel Russo',
-        cinematographer: 'Daniel Russo',
-        producer: 'John Doe'
+          Editor: "Ajay M.",
+          Shoot : "Ajay M."
+        // director: 'Daniel Russo',
+        // cinematographer: 'Daniel Russo',
+        // producer: 'John Doe'
       }
     },
     {
@@ -26,29 +28,31 @@ export default function Portfolio() {
       title: 'BRAND STORY',
       category: 'COMMERCIAL',
       image: 'https://images.unsplash.com/photo-1485095329183-d0797cdc5676?w=1200&h=800&fit=crop',
-      video: 'https://videos.pexels.com/video-files/7991491/7991491-hd_1920_1080_30fps.mp4',
-      description: 'Corporate storytelling for global brands',
+      video: 'https://res.cloudinary.com/zz6gfdix/video/upload/v1789928584/iphone_simple_intro.mp4',
+      description: 'Corporate storytelling for Apple Phones',
       genre: 'Commercial',
-      duration: '00:60',
+      duration: '00:15',
       crew: {
-        director: 'Daniel Russo',
-        cinematographer: 'Daniel Russo',
-        producer: 'Jane Doe'
+         Editor: "Ajay M."
+        // director: 'Daniel Russo',
+        // cinematographer: 'Daniel Russo',
+        // producer: 'Jane Doe'
       }
     },
     {
       id: 3,
-      title: 'ANDROMEDA',
+      title: 'Wedding Video',
       category: 'MUSIC-VIDEO',
       image: 'https://images.unsplash.com/photo-1514525253161-7a46d19cd819?w=1200&h=800&fit=crop',
-      video: 'https://videos.pexels.com/video-files/7991491/7991491-hd_1920_1080_30fps.mp4',
-      description: 'Music video for indie artist - Romance genre',
+      video: 'https://res.cloudinary.com/zz6gfdix/video/upload/v1789928832/wedding_2.mp4',
+      description: 'Wedding video for a Client - Romance genre',
       genre: 'Music Video',
-      duration: '04:30',
+      duration: '00:39',
       crew: {
-        director: 'Daniel Russo',
-        cinematographer: 'Daniel Russo',
-        producer: 'Alex Smith'
+         Editor: "Ajay M."
+        // director: 'Daniel Russo',
+        // cinematographer: 'Daniel Russo',
+        // producer: 'Alex Smith'
       }
     },
   ];
