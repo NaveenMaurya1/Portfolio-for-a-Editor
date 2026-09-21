@@ -8,39 +8,6 @@ export default function Portfolio() {
   const portfolioItems = [
     {
       id: 1,
-      title: 'Cinematice Shots',
-      category: 'NARRATIVE',
-      image: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1200&h=800&fit=crop',
-      video: 'https://res.cloudinary.com/zz6gfdix/video/upload/v1789926402/cinematic_content.mp4',
-      description: 'A cinematic story about me and and late night work.',
-      genre: 'Documentary',
-      duration: '00:36',
-      crew: {
-          Editor: "Ajay M.",
-          Shoot : "Ajay M."
-        // director: 'Daniel Russo',
-        // cinematographer: 'Daniel Russo',
-        // producer: 'John Doe'
-      }
-    },
-    {
-      id: 2,
-      title: 'BRAND STORY',
-      category: 'COMMERCIAL',
-      image: 'https://images.unsplash.com/photo-1485095329183-d0797cdc5676?w=1200&h=800&fit=crop',
-      video: 'https://res.cloudinary.com/zz6gfdix/video/upload/v1789928584/iphone_simple_intro.mp4',
-      description: 'Corporate storytelling for Apple Phones',
-      genre: 'Commercial',
-      duration: '00:15',
-      crew: {
-         Editor: "Ajay M."
-        // director: 'Daniel Russo',
-        // cinematographer: 'Daniel Russo',
-        // producer: 'Jane Doe'
-      }
-    },
-    {
-      id: 3,
       title: 'Wedding Video',
       category: 'MUSIC-VIDEO',
       image: 'https://images.unsplash.com/photo-1514525253161-7a46d19cd819?w=1200&h=800&fit=crop',
@@ -53,6 +20,38 @@ export default function Portfolio() {
         // director: 'Daniel Russo',
         // cinematographer: 'Daniel Russo',
         // producer: 'Alex Smith'
+      }
+    },
+    {
+      id: 2,
+       title: 'Cinematice Shots',
+      category: 'NARRATIVE',
+      image: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1200&h=800&fit=crop',
+      video: 'https://res.cloudinary.com/zz6gfdix/video/upload/v1789928564/decor_type.mp4',
+      description: 'A cinematic shots of decoration in a Wedding.',
+      genre: 'Documentary',
+      duration: '00:43',
+      crew: {
+          Editor: "Ajay M.",
+        // director: 'Daniel Russo',
+        // cinematographer: 'Daniel Russo',
+        // producer: 'John Doe'
+      }
+    },
+    {
+      id: 3,
+      title: 'BRAND STORY',
+      category: 'COMMERCIAL',
+      image: 'https://images.unsplash.com/photo-1485095329183-d0797cdc5676?w=1200&h=800&fit=crop',
+      video: 'https://res.cloudinary.com/zz6gfdix/video/upload/v1789928584/iphone_simple_intro.mp4',
+      description: 'Corporate storytelling for Apple Phones',
+      genre: 'Commercial',
+      duration: '00:15',
+      crew: {
+         Editor: "Ajay M."
+        // director: 'Daniel Russo',
+        // cinematographer: 'Daniel Russo',
+        // producer: 'Jane Doe'
       }
     },
   ];

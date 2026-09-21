@@ -10,17 +10,18 @@ export default function ImageCarousel({ onVideoChange }) {
         {
             id: 1,
             image: "https://res.cloudinary.com/zz6gfdix/image/upload/v1789908512/image_1.gif",
-            video: "https://res.cloudinary.com/zz6gfdix/video/upload/v1789926402/cinematic_content.mp4",
+            video: "https://res.cloudinary.com/zz6gfdix/video/upload/v1789928832/wedding_2.mp4",
+            // title: "HIGHEST PEAK",
             category: "NARRATIVE",
-            description: "A cinematic story about me and and late night work.",
+            description: "A Wedding Reel , Edited for a Client.",
         },
         {
             id: 2,
             image: "https://res.cloudinary.com/zz6gfdix/image/upload/v1789908280/image_2.gif",
-            video: "https://res.cloudinary.com/zz6gfdix/video/upload/v1789902426/idea.mp4",
+            video: "https://res.cloudinary.com/zz6gfdix/video/upload/v1789928564/decor_type.mp4",            
             // title: "HIGHEST PEAK",
             category: "NARRATIVE",
-            description: "A cinematic reel.",
+            description: "A cinematic shots of decoration in a Wedding.",
         },
         {
             id: 3,
@@ -36,7 +37,7 @@ export default function ImageCarousel({ onVideoChange }) {
             video: "https://res.cloudinary.com/zz6gfdix/video/upload/v1789928441/udaipur_reel.mp4",
             // title: "HIGHEST PEAK",
             category: "NARRATIVE",
-            description: "A cinematic story about nature and plces in Udaipur city.",
+            description: "A cinematic story about nature and places in Udaipur city.",
         },
 
     ];

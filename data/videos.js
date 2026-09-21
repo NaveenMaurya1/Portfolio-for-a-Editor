@@ -2,10 +2,10 @@ export const videos = [
   {
     id: 1,
     title: "Cinematic Shots",
-    description: "A cinematic story about me and late night work.",
+    description: "A cinematic shots of decoration in a Wedding.",
     category: "NARRATIVE",
     thumbnail: "/hero_background/image_4.png",
-    videoUrl: "https://res.cloudinary.com/zz6gfdix/video/upload/v1789926402/cinematic_content.mp4",
+    videoUrl: "https://res.cloudinary.com/zz6gfdix/video/upload/v1789928564/decor_type.mp4",
   },
   {
     id: 2,
