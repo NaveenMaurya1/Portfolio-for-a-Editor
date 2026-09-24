@@ -10,7 +10,7 @@ export default function Portfolio() {
       id: 1,
       title: 'Wedding Video',
       category: 'MUSIC-VIDEO',
-      image: 'https://images.unsplash.com/photo-1514525253161-7a46d19cd819?w=1200&h=800&fit=crop',
+      image: 'https://res.cloudinary.com/zz6gfdix/image/upload/v1790274208/file_000000003ef0820bbeff4f024310f0fc.png',
       video: 'https://res.cloudinary.com/zz6gfdix/video/upload/v1789928832/wedding_2.mp4',
       description: 'Wedding video for a Client - Romance genre',
       genre: 'Music Video',
@@ -26,7 +26,7 @@ export default function Portfolio() {
       id: 2,
        title: 'Cinematice Shots',
       category: 'NARRATIVE',
-      image: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1200&h=800&fit=crop',
+      image: 'https://res.cloudinary.com/zz6gfdix/image/upload/v1790274215/file_00000000f4d081f5b774c07c56b7c679.png',
       video: 'https://res.cloudinary.com/zz6gfdix/video/upload/v1789928564/decor_type.mp4',
       description: 'A cinematic shots of decoration in a Wedding.',
       genre: 'Documentary',
@@ -42,7 +42,7 @@ export default function Portfolio() {
       id: 3,
       title: 'BRAND STORY',
       category: 'COMMERCIAL',
-      image: 'https://images.unsplash.com/photo-1485095329183-d0797cdc5676?w=1200&h=800&fit=crop',
+      image: 'https://res.cloudinary.com/zz6gfdix/image/upload/v1790274219/file_00000000614481faa704d1ee801b0fae.png',
       video: 'https://res.cloudinary.com/zz6gfdix/video/upload/v1789928584/iphone_simple_intro.mp4',
       description: 'Corporate storytelling for Apple Phones',
       genre: 'Commercial',
@@ -80,11 +80,13 @@ export default function Portfolio() {
                 className="relative group cursor-pointer"
                 onClick={() => setSelectedVideo(item)}
               >
+              <div className="w-full h-96 overflow-hidden">
                 <img
                   src={item.image}
                   alt={item.title}
-                  className="w-full h-96 object-cover group-hover:opacity-80 transition-opacity duration-500"
+                  className="w-full h-full object-cover group-hover:opacity-80 transition-opacity duration-500"
                 />
+              </div>
 
                 <div className="absolute inset-0 bg-black/50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-500">
                   <div className="w-16 h-16 border-2 border-white rounded-full flex items-center justify-center">

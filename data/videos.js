@@ -4,7 +4,7 @@ export const videos = [
     title: "Cinematic Shots",
     description: "A cinematic shots of decoration in a Wedding.",
     category: "NARRATIVE",
-    thumbnail: "/hero_background/image_4.png",
+    thumbnail: "https://res.cloudinary.com/zz6gfdix/image/upload/v1790274215/file_00000000f4d081f5b774c07c56b7c679.png",
     videoUrl: "https://res.cloudinary.com/zz6gfdix/video/upload/v1789928564/decor_type.mp4",
   },
   {
@@ -12,7 +12,7 @@ export const videos = [
     title: "Wedding Reel",
     description: "Wedding video for a Client - Romance genre",
     category: "WEDDING VIDEO",
-     thumbnail: "/hero_background/image_4.png",
+     thumbnail: "https://res.cloudinary.com/zz6gfdix/image/upload/v1790274208/file_000000003ef0820bbeff4f024310f0fc.png",
     videoUrl: "https://res.cloudinary.com/zz6gfdix/video/upload/v1789928832/wedding_2.mp4",
   },
   {
