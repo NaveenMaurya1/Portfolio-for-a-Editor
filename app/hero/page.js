@@ -73,7 +73,7 @@ export default function Hero() {
         isOpen={!!selectedVideo}
         onClose={() => setSelectedVideo(null)}
       >
-        <div>
+        <div className="overflow-y-auto scrollbar-none">
 
           {/* Video */}
           <div className="relative pb-[56.25%] bg-black overflow-hidden">

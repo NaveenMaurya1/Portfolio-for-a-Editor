@@ -170,13 +170,14 @@ export default function Portfolio() {
         isOpen={!!selectedVideo}
         onClose={() => setSelectedVideo(null)}
       >
-        <div>
+        <div className='overflow-y-auto scrollbar-none'>
 
           {/* Video */}
           <div className="relative pb-[56.25%] bg-black overflow-hidden">
             <video
               autoPlay
               controls
+              loop
               className="absolute inset-0 w-full h-full"
               src={selectedVideo?.video}
             />
