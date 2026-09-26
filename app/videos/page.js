@@ -30,7 +30,7 @@ export default function VideosPage() {
                     </div>
                 </BlurFade>
 
-                <BlurFade delay={0.3} duration={0.8}>
+                {/* <BlurFade delay={0.3} duration={0.8}> */}
                     {/* Divider */}
                     <div className="border-t border-black/20 mt-16" />
 
@@ -45,7 +45,7 @@ export default function VideosPage() {
                         ))}
 
                     </div>
-                </BlurFade>
+                {/* </BlurFade> */}
 
             </section>
 
